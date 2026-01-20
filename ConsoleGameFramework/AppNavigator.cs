@@ -7,7 +7,8 @@ public class AppNavigator
 {
     public required ScreenFactory ScreenFactory { get; init; }
     public required IViewport Viewport { get; init; }
-    public required IScreen CurrentScreen
+
+    public IScreen CurrentScreen
     {
         get;
         set
@@ -15,7 +16,7 @@ public class AppNavigator
             field?.Dispose();
             field = value;
         }
-    }
+    } = null!;
 
     public void NavigateTo(Type screenType)
     {
