@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        
+        <PackageId>ConsoleGameFrameworkByMonavixx</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Monavixx</Authors>
+        <Company>Monavixx</Company>
+        <Description>Reusable game infrastructure: input, rendering, menus</Description>
+        <PackageTags>game framework input rendering menu console</PackageTags>
+        <RepositoryUrl>https://github.com/Monavixx/ConsoleGameFramework</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+</Project>
