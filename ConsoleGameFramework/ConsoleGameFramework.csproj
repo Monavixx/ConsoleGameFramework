@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         
         <PackageId>ConsoleGameFrameworkByMonavixx</PackageId>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <Authors>Monavixx</Authors>
         <Company>Monavixx</Company>
         <Description>Reusable game infrastructure: input, rendering, menus</Description>
