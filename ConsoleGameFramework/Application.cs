@@ -14,16 +14,16 @@ public class Application
 
     public bool IsRunning { get; private set; } = false;
 
-    public Application(IViewport viewport)
+    public Application(IViewport viewport, GlobalInputManager? globalInputManager = null)
     {
-        _viewport = new ConsoleViewport();
+        _viewport = viewport;
         _screenFactory = new ScreenFactory();
         _navigator = new AppNavigator()
         {
             ScreenFactory = _screenFactory,
             Viewport = _viewport,
         };
-        GlobalInputManager = new GlobalInputManager();
+        GlobalInputManager = globalInputManager ?? new GlobalInputManager();
     }
 
     public Application RegisterScreens(Action<ScreenFactory> action)
